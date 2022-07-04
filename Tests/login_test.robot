@@ -1,5 +1,7 @@
 ***Settings***
-Library     SeleniumLibrary
+Library         SeleniumLibrary
+Test Teardown   Close Website 
+Suite Teardown  Close All Browsers
 
 Resource    ../Resources/home_page_resources.robot
 Resource    ../Resources/common_resources.robot
@@ -14,16 +16,17 @@ Verify Login Elements Are Visible In Page
 
 Verify Success Login With Valid Credentials
     Open Website
-    Input Username          john
-    Input Password          demo
+    Input Username          ${VALID_USERNAME}
+    Input Password          ${VALID_PASSWORD}
     Log User In
+    Title Should Be         ${ACCOUNT_OVERVIEW_TITLE}
 
-    
-Verify Failed Login With Invalid Credentials
+Verify Failed Login With One Empty Input
     Open Website
-    Input Username          jane
+    Input Username          ${VALID_USERNAME}
     Input Password          ${EMPTY}
-    Log User In     
-    Error Message Should Be Visible        
+    Log User In
+    Error Message Should Be Visible As  ${ERROR_MSG_EMPTY_INPUTS}
+    
 
    
