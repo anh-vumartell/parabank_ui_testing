@@ -7,6 +7,7 @@ ${USERNAME_INPUT}       //input[@name="username"]
 ${PASSWORD_INPUT}       //input[@name="password"]  
 ${LOGIN_BTN}            //input[@value="Log In"]                
 
+
 ***Keywords***
 Username Input Should Be Visible
     Wait Until Element Is Visible  ${USERNAME_INPUT}

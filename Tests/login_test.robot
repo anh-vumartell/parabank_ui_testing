@@ -26,7 +26,7 @@ Verify Failed Login With One Empty Input
     Input Username          ${VALID_USERNAME}
     Input Password          ${EMPTY}
     Log User In
-    Error Message Should Be Visible As  ${ERROR_MSG_EMPTY_INPUTS}
+    Error Message Should Be Visible As  ${ERROR_MSG_EMPTY_INPUT}
     
 
    

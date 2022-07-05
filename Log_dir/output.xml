@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220704 21:39:53.088" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220705 15:57:40.193" rpa="false" schemaversion="3">
 <suite id="s1" name="Login Test" source="C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Tests\login_test.robot">
 <test id="s1-t1" name="Verify Login Elements Are Visible In Page" line="12">
 <kw name="Open Website" library="common_resources">
@@ -7,42 +7,42 @@
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220704 21:39:53.285" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank/index.htm'.</msg>
-<msg timestamp="20220704 21:39:53.286" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-1.log</msg>
-<status status="PASS" starttime="20220704 21:39:53.285" endtime="20220704 21:40:03.097"/>
+<msg timestamp="20220705 15:57:40.407" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank'.</msg>
+<msg timestamp="20220705 15:57:40.408" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-7.log</msg>
+<status status="PASS" starttime="20220705 15:57:40.405" endtime="20220705 15:57:48.309"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220704 21:40:05.103" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220704 21:40:03.097" endtime="20220704 21:40:05.103"/>
+<msg timestamp="20220705 15:57:50.322" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220705 15:57:48.310" endtime="20220705 15:57:50.322"/>
 </kw>
-<status status="PASS" starttime="20220704 21:39:53.285" endtime="20220704 21:40:05.103"/>
+<status status="PASS" starttime="20220705 15:57:40.405" endtime="20220705 15:57:50.322"/>
 </kw>
 <kw name="Username Input Should Be Visible" library="home_page_resources">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${USERNAME_INPUT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220704 21:40:05.103" endtime="20220704 21:40:05.132"/>
+<status status="PASS" starttime="20220705 15:57:50.324" endtime="20220705 15:57:50.351"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:05.103" endtime="20220704 21:40:05.133"/>
+<status status="PASS" starttime="20220705 15:57:50.323" endtime="20220705 15:57:50.351"/>
 </kw>
 <kw name="Password Input Should Be Visible" library="home_page_resources">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PASSWORD_INPUT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220704 21:40:05.133" endtime="20220704 21:40:05.142"/>
+<status status="PASS" starttime="20220705 15:57:50.352" endtime="20220705 15:57:50.365"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:05.133" endtime="20220704 21:40:05.142"/>
+<status status="PASS" starttime="20220705 15:57:50.352" endtime="20220705 15:57:50.365"/>
 </kw>
 <kw name="Close Website" library="common_resources" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220704 21:40:05.143" endtime="20220704 21:40:05.788"/>
+<status status="PASS" starttime="20220705 15:57:50.366" endtime="20220705 15:57:51.041"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:05.143" endtime="20220704 21:40:05.788"/>
+<status status="PASS" starttime="20220705 15:57:50.365" endtime="20220705 15:57:51.041"/>
 </kw>
-<status status="PASS" starttime="20220704 21:39:53.284" endtime="20220704 21:40:05.788"/>
+<status status="PASS" starttime="20220705 15:57:40.405" endtime="20220705 15:57:51.042"/>
 </test>
 <test id="s1-t2" name="Verify Success Login With Valid Credentials" line="17">
 <kw name="Open Website" library="common_resources">
@@ -50,17 +50,17 @@
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220704 21:40:05.793" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank/index.htm'.</msg>
-<msg timestamp="20220704 21:40:05.795" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-2.log</msg>
-<status status="PASS" starttime="20220704 21:40:05.793" endtime="20220704 21:40:14.648"/>
+<msg timestamp="20220705 15:57:51.044" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank'.</msg>
+<msg timestamp="20220705 15:57:51.044" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-8.log</msg>
+<status status="PASS" starttime="20220705 15:57:51.042" endtime="20220705 15:57:58.672"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220704 21:40:16.651" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220704 21:40:14.649" endtime="20220704 21:40:16.651"/>
+<msg timestamp="20220705 15:58:00.676" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220705 15:57:58.672" endtime="20220705 15:58:00.676"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:05.793" endtime="20220704 21:40:16.651"/>
+<status status="PASS" starttime="20220705 15:57:51.042" endtime="20220705 15:58:00.676"/>
 </kw>
 <kw name="Input Username" library="home_page_resources">
 <arg>${VALID_USERNAME}</arg>
@@ -68,10 +68,10 @@
 <arg>${USERNAME_INPUT}</arg>
 <arg>${test_data}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220704 21:40:16.654" level="INFO">Typing text 'john' into text field '//input[@name="username"]'.</msg>
-<status status="PASS" starttime="20220704 21:40:16.651" endtime="20220704 21:40:16.680"/>
+<msg timestamp="20220705 15:58:00.679" level="INFO">Typing text 'john' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" starttime="20220705 15:58:00.678" endtime="20220705 15:58:00.715"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:16.651" endtime="20220704 21:40:16.680"/>
+<status status="PASS" starttime="20220705 15:58:00.677" endtime="20220705 15:58:00.716"/>
 </kw>
 <kw name="Input Password" library="home_page_resources">
 <arg>${VALID_PASSWORD}</arg>
@@ -79,36 +79,36 @@
 <arg>${PASSWORD_INPUT}</arg>
 <arg>${test_data}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220704 21:40:16.683" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
-<msg timestamp="20220704 21:40:16.689" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220704 21:40:16.694" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220704 21:40:16.682" endtime="20220704 21:40:16.694"/>
+<msg timestamp="20220705 15:58:00.717" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
+<msg timestamp="20220705 15:58:00.723" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220705 15:58:00.730" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220705 15:58:00.717" endtime="20220705 15:58:00.730"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:16.682" endtime="20220704 21:40:16.694"/>
+<status status="PASS" starttime="20220705 15:58:00.716" endtime="20220705 15:58:00.730"/>
 </kw>
 <kw name="Log User In" library="home_page_resources">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LOGIN_BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220704 21:40:16.696" level="INFO">Clicking button '//input[@value="Log In"]'.</msg>
-<status status="PASS" starttime="20220704 21:40:16.696" endtime="20220704 21:40:17.347"/>
+<msg timestamp="20220705 15:58:00.731" level="INFO">Clicking button '//input[@value="Log In"]'.</msg>
+<status status="PASS" starttime="20220705 15:58:00.731" endtime="20220705 15:58:01.268"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:16.694" endtime="20220704 21:40:17.347"/>
+<status status="PASS" starttime="20220705 15:58:00.730" endtime="20220705 15:58:01.268"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${ACCOUNT_OVERVIEW_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220704 21:40:17.348" level="INFO">Page title is 'ParaBank | Accounts Overview'.</msg>
-<status status="PASS" starttime="20220704 21:40:17.347" endtime="20220704 21:40:17.348"/>
+<msg timestamp="20220705 15:58:01.270" level="INFO">Page title is 'ParaBank | Accounts Overview'.</msg>
+<status status="PASS" starttime="20220705 15:58:01.268" endtime="20220705 15:58:01.270"/>
 </kw>
 <kw name="Close Website" library="common_resources" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220704 21:40:17.350" endtime="20220704 21:40:17.923"/>
+<status status="PASS" starttime="20220705 15:58:01.271" endtime="20220705 15:58:02.106"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:17.350" endtime="20220704 21:40:17.923"/>
+<status status="PASS" starttime="20220705 15:58:01.271" endtime="20220705 15:58:02.106"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:05.793" endtime="20220704 21:40:17.924"/>
+<status status="PASS" starttime="20220705 15:57:51.042" endtime="20220705 15:58:02.106"/>
 </test>
 <test id="s1-t3" name="Verify Failed Login With One Empty Input" line="24">
 <kw name="Open Website" library="common_resources">
@@ -116,17 +116,17 @@
 <arg>${BASE_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220704 21:40:17.925" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank/index.htm'.</msg>
-<msg timestamp="20220704 21:40:17.926" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-3.log</msg>
-<status status="PASS" starttime="20220704 21:40:17.925" endtime="20220704 21:40:26.839"/>
+<msg timestamp="20220705 15:58:02.108" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank'.</msg>
+<msg timestamp="20220705 15:58:02.108" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-9.log</msg>
+<status status="PASS" starttime="20220705 15:58:02.107" endtime="20220705 15:58:09.711"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220704 21:40:28.842" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220704 21:40:26.839" endtime="20220704 21:40:28.842"/>
+<msg timestamp="20220705 15:58:11.713" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220705 15:58:09.711" endtime="20220705 15:58:11.713"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:17.925" endtime="20220704 21:40:28.842"/>
+<status status="PASS" starttime="20220705 15:58:02.107" endtime="20220705 15:58:11.713"/>
 </kw>
 <kw name="Input Username" library="home_page_resources">
 <arg>${VALID_USERNAME}</arg>
@@ -134,10 +134,10 @@
 <arg>${USERNAME_INPUT}</arg>
 <arg>${test_data}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220704 21:40:28.844" level="INFO">Typing text 'john' into text field '//input[@name="username"]'.</msg>
-<status status="PASS" starttime="20220704 21:40:28.842" endtime="20220704 21:40:28.874"/>
+<msg timestamp="20220705 15:58:11.716" level="INFO">Typing text 'john' into text field '//input[@name="username"]'.</msg>
+<status status="PASS" starttime="20220705 15:58:11.715" endtime="20220705 15:58:11.749"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:28.842" endtime="20220704 21:40:28.874"/>
+<status status="PASS" starttime="20220705 15:58:11.714" endtime="20220705 15:58:11.749"/>
 </kw>
 <kw name="Input Password" library="home_page_resources">
 <arg>${EMPTY}</arg>
@@ -145,43 +145,43 @@
 <arg>${PASSWORD_INPUT}</arg>
 <arg>${test_data}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220704 21:40:28.876" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
-<msg timestamp="20220704 21:40:28.881" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220704 21:40:28.889" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220704 21:40:28.876" endtime="20220704 21:40:28.889"/>
+<msg timestamp="20220705 15:58:11.751" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
+<msg timestamp="20220705 15:58:11.757" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220705 15:58:11.762" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220705 15:58:11.751" endtime="20220705 15:58:11.762"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:28.876" endtime="20220704 21:40:28.889"/>
+<status status="PASS" starttime="20220705 15:58:11.750" endtime="20220705 15:58:11.762"/>
 </kw>
 <kw name="Log User In" library="home_page_resources">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${LOGIN_BTN}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220704 21:40:28.889" level="INFO">Clicking button '//input[@value="Log In"]'.</msg>
-<status status="PASS" starttime="20220704 21:40:28.889" endtime="20220704 21:40:29.276"/>
+<msg timestamp="20220705 15:58:11.762" level="INFO">Clicking button '//input[@value="Log In"]'.</msg>
+<status status="PASS" starttime="20220705 15:58:11.762" endtime="20220705 15:58:12.041"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:28.889" endtime="20220704 21:40:29.277"/>
+<status status="PASS" starttime="20220705 15:58:11.762" endtime="20220705 15:58:12.041"/>
 </kw>
 <kw name="Error Message Should Be Visible As" library="common_resources">
 <arg>${ERROR_MSG_EMPTY_INPUTS}</arg>
-<msg timestamp="20220704 21:40:29.278" level="FAIL">Variable '${ERROR_MSG_EMPTY_INPUTS}' not found. Did you mean:
+<msg timestamp="20220705 15:58:12.043" level="FAIL">Variable '${ERROR_MSG_EMPTY_INPUTS}' not found. Did you mean:
     ${ERROR_MSG_EMPTY_INPUT}</msg>
-<status status="FAIL" starttime="20220704 21:40:29.277" endtime="20220704 21:40:29.278"/>
+<status status="FAIL" starttime="20220705 15:58:12.041" endtime="20220705 15:58:12.043"/>
 </kw>
 <kw name="Close Website" library="common_resources" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220704 21:40:29.279" endtime="20220704 21:40:29.813"/>
+<status status="PASS" starttime="20220705 15:58:12.044" endtime="20220705 15:58:12.785"/>
 </kw>
-<status status="PASS" starttime="20220704 21:40:29.279" endtime="20220704 21:40:29.829"/>
+<status status="PASS" starttime="20220705 15:58:12.044" endtime="20220705 15:58:12.785"/>
 </kw>
-<status status="FAIL" starttime="20220704 21:40:17.925" endtime="20220704 21:40:29.829">Variable '${ERROR_MSG_EMPTY_INPUTS}' not found. Did you mean:
+<status status="FAIL" starttime="20220705 15:58:02.107" endtime="20220705 15:58:12.786">Variable '${ERROR_MSG_EMPTY_INPUTS}' not found. Did you mean:
     ${ERROR_MSG_EMPTY_INPUT}</status>
 </test>
 <kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220704 21:40:29.831" endtime="20220704 21:40:29.831"/>
+<status status="PASS" starttime="20220705 15:58:12.787" endtime="20220705 15:58:12.787"/>
 </kw>
-<status status="FAIL" starttime="20220704 21:39:53.095" endtime="20220704 21:40:29.831"/>
+<status status="FAIL" starttime="20220705 15:57:40.194" endtime="20220705 15:58:12.787"/>
 </suite>
 <statistics>
 <total>
@@ -194,7 +194,7 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220704 21:39:53.275" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\home_page_resources.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+<msg timestamp="20220705 15:57:40.393" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\home_page_resources.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -207,5 +207,6 @@ PYTHONPATH:
   C:\Users\B962457\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
   C:\Users\B962457\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
   C:\Users\B962457\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20220705 15:57:40.399" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\common_resources.robot' on line 13: Setting variable '${UPDATE_CONTACT_INFO_URL} //a[href="/parabank/updateprofile.htm"]' failed: Invalid variable name '${UPDATE_CONTACT_INFO_URL} //a[href="/parabank/updateprofile.htm"]'.</msg>
 </errors>
 </robot>

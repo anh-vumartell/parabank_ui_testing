@@ -6,7 +6,8 @@ Resource    ../Resources/common_resources.robot
 ***Variables***
 ${OVERVIEW_PAGE_URL}    https://parabank.parasoft.com/parabank/overview.htm   
 ${ACCOUNT_TABLE}        xpath://*[@id="accountTable"]   
-${LOGOUT_BTN}           
+${LOGOUT_BTN}     
+      
 ***Keywords***
 Overview Page Should Be Opened
     SeleniumLibrary.Open Browser   ${OVERVIEW_PAGE_URL}    chrome

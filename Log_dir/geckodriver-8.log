@@ -1,0 +1,13 @@
+1657025871066	geckodriver	INFO	Listening on 127.0.0.1:64419
+1657025874129	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64420" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\B962457\\AppData\\Local\\Temp\\rust_mozprofileSh02YM"
+1657025874375	Marionette	INFO	Marionette enabled
+1657025874378	Marionette	INFO	Listening on port 64430
+WebDriver BiDi listening on ws://localhost:64420
+Read port: 64430
+1657025874562	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\B962457\\AppData\\Local\\Temp\\rust_mozprofileSh02YM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64420/devtools/browser/04ac9b88-2dbc-4549-96b2-fa7e33a7818e
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://parabank.parasoft.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://parabank.parasoft.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1657025881273	Marionette	INFO	Stopped listening on port 64430
