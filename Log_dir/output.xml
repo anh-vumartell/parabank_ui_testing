@@ -1,200 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220705 15:57:40.193" rpa="false" schemaversion="3">
-<suite id="s1" name="Login Test" source="C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Tests\login_test.robot">
-<test id="s1-t1" name="Verify Login Elements Are Visible In Page" line="12">
-<kw name="Open Website" library="common_resources">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${BASE_URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220705 15:57:40.407" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank'.</msg>
-<msg timestamp="20220705 15:57:40.408" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-7.log</msg>
-<status status="PASS" starttime="20220705 15:57:40.405" endtime="20220705 15:57:48.309"/>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220706 15:09:13.832" rpa="false" schemaversion="3">
+<suite id="s1" name="Account Overview Test" source="C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Tests\account_overview_test.robot">
+<test id="s1-t1" name="Verify Success Open Account Overview Page" line="11">
+<kw name="Overview Page Should Be Opened" library="overview_page_resources">
+<kw name="Log Number Of Account" library="overview_page_resources">
+<kw name="Print Number Of Accounts" library="number_of_accounts">
+<var>${account_counts}</var>
+<msg timestamp="20220706 15:09:27.041" level="INFO">${account_counts} = 0</msg>
+<status status="PASS" starttime="20220706 15:09:14.095" endtime="20220706 15:09:27.041"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220705 15:57:50.322" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220705 15:57:48.310" endtime="20220705 15:57:50.322"/>
+<kw name="Log" library="BuiltIn">
+<arg>Number of accounts is ${account_counts}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220706 15:09:27.041" level="INFO">Number of accounts is 0</msg>
+<status status="PASS" starttime="20220706 15:09:27.041" endtime="20220706 15:09:27.041"/>
 </kw>
-<status status="PASS" starttime="20220705 15:57:40.405" endtime="20220705 15:57:50.322"/>
-</kw>
-<kw name="Username Input Should Be Visible" library="home_page_resources">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${USERNAME_INPUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220705 15:57:50.324" endtime="20220705 15:57:50.351"/>
-</kw>
-<status status="PASS" starttime="20220705 15:57:50.323" endtime="20220705 15:57:50.351"/>
-</kw>
-<kw name="Password Input Should Be Visible" library="home_page_resources">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${PASSWORD_INPUT}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220705 15:57:50.352" endtime="20220705 15:57:50.365"/>
-</kw>
-<status status="PASS" starttime="20220705 15:57:50.352" endtime="20220705 15:57:50.365"/>
-</kw>
-<kw name="Close Website" library="common_resources" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220705 15:57:50.366" endtime="20220705 15:57:51.041"/>
-</kw>
-<status status="PASS" starttime="20220705 15:57:50.365" endtime="20220705 15:57:51.041"/>
-</kw>
-<status status="PASS" starttime="20220705 15:57:40.405" endtime="20220705 15:57:51.042"/>
-</test>
-<test id="s1-t2" name="Verify Success Login With Valid Credentials" line="17">
-<kw name="Open Website" library="common_resources">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${BASE_URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220705 15:57:51.044" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank'.</msg>
-<msg timestamp="20220705 15:57:51.044" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-8.log</msg>
-<status status="PASS" starttime="20220705 15:57:51.042" endtime="20220705 15:57:58.672"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220705 15:58:00.676" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220705 15:57:58.672" endtime="20220705 15:58:00.676"/>
-</kw>
-<status status="PASS" starttime="20220705 15:57:51.042" endtime="20220705 15:58:00.676"/>
-</kw>
-<kw name="Input Username" library="home_page_resources">
-<arg>${VALID_USERNAME}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${USERNAME_INPUT}</arg>
-<arg>${test_data}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220705 15:58:00.679" level="INFO">Typing text 'john' into text field '//input[@name="username"]'.</msg>
-<status status="PASS" starttime="20220705 15:58:00.678" endtime="20220705 15:58:00.715"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:00.677" endtime="20220705 15:58:00.716"/>
-</kw>
-<kw name="Input Password" library="home_page_resources">
-<arg>${VALID_PASSWORD}</arg>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${PASSWORD_INPUT}</arg>
-<arg>${test_data}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220705 15:58:00.717" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
-<msg timestamp="20220705 15:58:00.723" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220705 15:58:00.730" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220705 15:58:00.717" endtime="20220705 15:58:00.730"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:00.716" endtime="20220705 15:58:00.730"/>
-</kw>
-<kw name="Log User In" library="home_page_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${LOGIN_BTN}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220705 15:58:00.731" level="INFO">Clicking button '//input[@value="Log In"]'.</msg>
-<status status="PASS" starttime="20220705 15:58:00.731" endtime="20220705 15:58:01.268"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:00.730" endtime="20220705 15:58:01.268"/>
+<status status="PASS" starttime="20220706 15:09:14.095" endtime="20220706 15:09:27.041"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${ACCOUNT_OVERVIEW_TITLE}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220705 15:58:01.270" level="INFO">Page title is 'ParaBank | Accounts Overview'.</msg>
-<status status="PASS" starttime="20220705 15:58:01.268" endtime="20220705 15:58:01.270"/>
+<msg timestamp="20220706 15:09:27.041" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220706 15:09:27.041" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220706 15:09:27.041" endtime="20220706 15:09:27.041"/>
 </kw>
-<kw name="Close Website" library="common_resources" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220705 15:58:01.271" endtime="20220705 15:58:02.106"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:01.271" endtime="20220705 15:58:02.106"/>
-</kw>
-<status status="PASS" starttime="20220705 15:57:51.042" endtime="20220705 15:58:02.106"/>
-</test>
-<test id="s1-t3" name="Verify Failed Login With One Empty Input" line="24">
-<kw name="Open Website" library="common_resources">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${BASE_URL}</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220705 15:58:02.108" level="INFO">Opening browser 'firefox' to base url 'https://parabank.parasoft.com/parabank'.</msg>
-<msg timestamp="20220705 15:58:02.108" level="INFO">Firefox driver log is always forced to to: C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Log_dir\geckodriver-9.log</msg>
-<status status="PASS" starttime="20220705 15:58:02.107" endtime="20220705 15:58:09.711"/>
+<kw name="Account Table Is Visible" library="overview_page_resources">
+<status status="NOT RUN" starttime="20220706 15:09:27.041" endtime="20220706 15:09:27.041"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220705 15:58:11.713" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220705 15:58:09.711" endtime="20220705 15:58:11.713"/>
+<status status="NOT RUN" starttime="20220706 15:09:27.041" endtime="20220706 15:09:27.041"/>
 </kw>
-<status status="PASS" starttime="20220705 15:58:02.107" endtime="20220705 15:58:11.713"/>
+<status status="FAIL" starttime="20220706 15:09:14.095" endtime="20220706 15:09:27.041"/>
 </kw>
-<kw name="Input Username" library="home_page_resources">
-<arg>${VALID_USERNAME}</arg>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${USERNAME_INPUT}</arg>
-<arg>${test_data}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220705 15:58:11.716" level="INFO">Typing text 'john' into text field '//input[@name="username"]'.</msg>
-<status status="PASS" starttime="20220705 15:58:11.715" endtime="20220705 15:58:11.749"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:11.714" endtime="20220705 15:58:11.749"/>
-</kw>
-<kw name="Input Password" library="home_page_resources">
-<arg>${EMPTY}</arg>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>${PASSWORD_INPUT}</arg>
-<arg>${test_data}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220705 15:58:11.751" level="INFO">Typing password into text field '//input[@name="password"]'.</msg>
-<msg timestamp="20220705 15:58:11.757" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220705 15:58:11.762" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220705 15:58:11.751" endtime="20220705 15:58:11.762"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:11.750" endtime="20220705 15:58:11.762"/>
-</kw>
-<kw name="Log User In" library="home_page_resources">
-<kw name="Click Button" library="SeleniumLibrary">
-<arg>${LOGIN_BTN}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20220705 15:58:11.762" level="INFO">Clicking button '//input[@value="Log In"]'.</msg>
-<status status="PASS" starttime="20220705 15:58:11.762" endtime="20220705 15:58:12.041"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:11.762" endtime="20220705 15:58:12.041"/>
-</kw>
-<kw name="Error Message Should Be Visible As" library="common_resources">
-<arg>${ERROR_MSG_EMPTY_INPUTS}</arg>
-<msg timestamp="20220705 15:58:12.043" level="FAIL">Variable '${ERROR_MSG_EMPTY_INPUTS}' not found. Did you mean:
-    ${ERROR_MSG_EMPTY_INPUT}</msg>
-<status status="FAIL" starttime="20220705 15:58:12.041" endtime="20220705 15:58:12.043"/>
-</kw>
-<kw name="Close Website" library="common_resources" type="TEARDOWN">
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220705 15:58:12.044" endtime="20220705 15:58:12.785"/>
-</kw>
-<status status="PASS" starttime="20220705 15:58:12.044" endtime="20220705 15:58:12.785"/>
-</kw>
-<status status="FAIL" starttime="20220705 15:58:02.107" endtime="20220705 15:58:12.786">Variable '${ERROR_MSG_EMPTY_INPUTS}' not found. Did you mean:
-    ${ERROR_MSG_EMPTY_INPUT}</status>
+<status status="FAIL" starttime="20220706 15:09:14.094" endtime="20220706 15:09:27.041">No browser is open.</status>
 </test>
-<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220705 15:58:12.787" endtime="20220705 15:58:12.787"/>
-</kw>
-<status status="FAIL" starttime="20220705 15:57:40.194" endtime="20220705 15:58:12.787"/>
+<doc>This test suite contains test cases that verify UI elements in the account overview page</doc>
+<status status="FAIL" starttime="20220706 15:09:13.834" endtime="20220706 15:09:27.054"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="1" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="1" skip="0" id="s1" name="Login Test">Login Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Account Overview Test">Account Overview Test</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220705 15:57:40.393" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\home_page_resources.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+<msg timestamp="20220706 15:09:14.069" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\overview_page_resources.robot' on line 13: Setting variable '${ACCOUNT_TABLE_HEADER_ACCOUNT} #accountTable&gt; thead &gt; tr &gt; th:nth-child(1)' failed: Invalid variable name '${ACCOUNT_TABLE_HEADER_ACCOUNT} #accountTable&gt; thead &gt; tr &gt; th:nth-child(1)'.</msg>
+<msg timestamp="20220706 15:09:14.070" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\overview_page_resources.robot' on line 14: Setting variable '${ACCOUNT_TABLE_HEADER_BALANCE} #accountTable&gt; thead &gt; tr &gt; th:nth-child(2)' failed: Invalid variable name '${ACCOUNT_TABLE_HEADER_BALANCE} #accountTable&gt; thead &gt; tr &gt; th:nth-child(2)'.</msg>
+<msg timestamp="20220706 15:09:14.071" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\overview_page_resources.robot' on line 15: Setting variable '${ACCOUNT_TABLE_HEADER_AVAILABLE_AMOUNT} #accountTable&gt; thead &gt; tr &gt; th:nth-child(3)' failed: Invalid variable name '${ACCOUNT_TABLE_HEADER_AVAILABLE_AMOUNT} #accountTable&gt; thead &gt; tr &gt; th:nth-child(3)'.</msg>
+<msg timestamp="20220706 15:09:14.081" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\common_resources.robot' on line 13: Setting variable '${UPDATE_CONTACT_INFO_URL} //a[href="/parabank/updateprofile.htm"]' failed: Invalid variable name '${UPDATE_CONTACT_INFO_URL} //a[href="/parabank/updateprofile.htm"]'.</msg>
+<msg timestamp="20220706 15:09:14.088" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\home_page_resources.robot' on line 3: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -207,6 +67,5 @@ PYTHONPATH:
   C:\Users\B962457\AppData\Local\Programs\Python\Python310\lib\site-packages\win32
   C:\Users\B962457\AppData\Local\Programs\Python\Python310\lib\site-packages\win32\lib
   C:\Users\B962457\AppData\Local\Programs\Python\Python310\lib\site-packages\Pythonwin</msg>
-<msg timestamp="20220705 15:57:40.399" level="ERROR">Error in file 'C:\Users\B962457\Documents\Automation_projects\robot_projects\parabank_ui_testing\Resources\common_resources.robot' on line 13: Setting variable '${UPDATE_CONTACT_INFO_URL} //a[href="/parabank/updateprofile.htm"]' failed: Invalid variable name '${UPDATE_CONTACT_INFO_URL} //a[href="/parabank/updateprofile.htm"]'.</msg>
 </errors>
 </robot>

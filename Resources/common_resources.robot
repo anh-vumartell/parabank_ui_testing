@@ -27,7 +27,7 @@ ${ERROR_MESSAGE}    //*[@id="rightPanel"]/p
 ${ERROR_MSG_EMPTY_INPUT}        Please enter a username and password.
 ${ERROR_MSG_INVALID_INPUTS}     The username and password could not be verified.   
 
-${ACCOUNT_OVERVIEW_TITLE}   ParaBank | Accounts Overview
+
 
 
 
@@ -44,7 +44,7 @@ Error Message Should Be Visible As
     Wait Until Element Is Visible  ${ERROR_MESSAGE}
     Element Text Should Be  ${ERROR_MESSAGE}    ${message}
 
-Nagigate To Index Page
+Navigate To Overview Page After Logging In
     Open Website
     Input Username          ${VALID_USERNAME}
     Input Password          ${VALID_PASSWORD}
