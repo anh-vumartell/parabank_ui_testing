@@ -1,6 +1,5 @@
 ***Settings***
-Library     SeleniumLibrary
-Library     Selenium2Library
+Library     Browser
 
 ***Variables***
 ${USERNAME_INPUT}       //input[@name="username"]     

@@ -7,6 +7,7 @@ This repo showcases my ability in using Robot Framework in web UI testing
 We are going to do functionality testing on UI level of this demo bank's website - [Parabank](https://parabank.parasoft.com/parabank/index.htm)
 
 # Test Strategies
+
 - [x] Verify login and logout
 - [ ] Open new account feature
   - [ ] Verify new checking account is opened
@@ -23,4 +24,3 @@ We are going to do functionality testing on UI level of this demo bank's website
   - [ ] Verify success bill payment
 - [ ] Update Contact Info feature
 - [ ] Request A Loan feature
-

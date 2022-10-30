@@ -1,7 +1,7 @@
 ***Settings***
-Library         SeleniumLibrary
-Test Teardown   Close Website 
-Suite Teardown  Close All Browsers
+Library         Browser
+Test Teardown   Close Parabank Homepage
+Suite Teardown  Close All Pages
 
 Resource    ../Resources/home_page_resources.robot
 Resource    ../Resources/common_resources.robot
@@ -10,7 +10,7 @@ Resource    ../Resources/overview_page_resources.robot
 
 ***Test Cases***
 Verify Login Elements Are Visible In Page
-   Open Website
+   Open Parabank Homepage
    Username Input Should Be Visible
    Password Input Should Be Visible
 

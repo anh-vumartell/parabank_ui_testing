@@ -1,9 +1,8 @@
 ***Settings***
-Library     SeleniumLibrary
+Library     Browser
 
 
 ***Variables***
-${BROWSER}          firefox
 ${BASE_URL}         https://parabank.parasoft.com/parabank
 ${INDEX_URL}        ${BASE_URL}/index.htm
 ${ACCOUNT_OVERVIEW_URL}    //a[@href="/parabank/overview.htm"]
@@ -33,11 +32,16 @@ ${ERROR_MSG_INVALID_INPUTS}     The username and password could not be verified.
 
 
 ***Keywords***
-Open Website
-    Open Browser       ${BASE_URL}     ${BROWSER}
-    Sleep           2s
-Close Website
-    Close Browser
+Open Parabank Homepage
+    New Page       ${BASE_URL}     
+    
+Close Current Page
+    Close Browser   CURRENT
+
+Close All Pages 
+    Close Browser   ALL
+
+
    
 Error Message Should Be Visible As     
     [Arguments]         ${message}

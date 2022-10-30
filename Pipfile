@@ -8,6 +8,8 @@ virtualenv = "*"
 robotframework-seleniumlibrary = "*"
 webdrivermanager = "*"
 robotframework-selenium2library = "*"
+robotframework = "*"
+robotframework-browser = "*"
 
 [dev-packages]
 
