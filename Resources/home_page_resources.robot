@@ -16,12 +16,12 @@ Password Input Should Be Visible
 
 Input Username
     [Arguments]     ${test_data}
-    SeleniumLibrary.Input Text  ${USERNAME_INPUT}   ${test_data}
+    Fill Text        ${USERNAME_INPUT}   ${test_data}
 
 Input Password
     [Arguments]     ${test_data}
-    SeleniumLibrary.Input Password   ${PASSWORD_INPUT}  ${test_data}
+    Fill Text       ${PASSWORD_INPUT}  ${test_data}
 
 Log User In
-    SeleniumLibrary.Click Button  ${LOGIN_BTN}  
+    Click  ${LOGIN_BTN}  
 

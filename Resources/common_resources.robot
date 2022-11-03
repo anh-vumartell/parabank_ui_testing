@@ -21,9 +21,9 @@ ${VALID_PASSWORD}       demo
 ${INVALID_USERNAME}     janne
 ${INVALID_PASSWORD}     0000
 
-${ERROR_HEADING}    //*[@id="rightPanel"]/h1
-${ERROR_MESSAGE}    //*[@id="rightPanel"]/p   
-${ERROR_MSG_EMPTY_INPUT}        Please enter a username and password.
+${PAGE_HEADER}      //h1[@class="title"] 
+${ERROR_MESSAGE}    //p[@class="error"]    
+${ERROR_MSG_EMPTY_INPUTS}        Please enter a username and password.
 ${ERROR_MSG_INVALID_INPUTS}     The username and password could not be verified.   
 
 
@@ -36,10 +36,10 @@ Open Parabank Homepage
     New Page       ${BASE_URL}     
     
 Close Current Page
-    Close Browser   CURRENT
+    Browser.Close Browser   CURRENT
 
 Close All Pages 
-    Close Browser   ALL
+   Browser.Close Browser   ALL
 
 
    
